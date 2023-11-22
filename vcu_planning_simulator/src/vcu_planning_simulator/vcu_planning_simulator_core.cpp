@@ -263,6 +263,7 @@ void VcuPlanningSimulator::on_timer()
 
   // publish vehicle state
   publish_odometry(current_odometry_);
+  publish_acceleration();
   publish_tf(current_odometry_);
 }
 
